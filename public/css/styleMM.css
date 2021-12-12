@@ -1,0 +1,146 @@
+
+
+body {
+    font-size: 10pt;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    color: black;
+    line-height: 14pt;
+    padding-left: 5pt;
+    padding-right: 5pt;
+    padding-top: 5pt;
+  }
+
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  h1 {
+    font: 14pt Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    line-height: 20pt;
+  }
+  
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
+}
+th, td {
+  border: 1px solid black;
+  padding: 20px;
+
+}
+.cell-highlight {
+  background-color: gold;
+  font-weight: bold;
+}
+
+
+thead th {
+  width: 25%;
+}
+  
+  p.subheader {
+    font-weight: bold;
+    color: #ffd700;
+  }
+  
+  img {
+    padding: 3pt;
+    float: right;}
+  
+  a {
+    text-decoration: none;}
+  
+  a:link, a:visited {
+    color: #8094d6;}
+  
+  
+  a:hover, a:active {
+    color: #FF9933;}
+  
+  div.footer {
+    font-size: 9pt;
+    font-style: italic;
+    line-height: 12pt;
+    text-align: center;
+    padding-top: 30pt;
+  
+  }
+
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background: #F1E5AC;
+  }
+   
+  .title1 h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: x-large;
+    font-style: oblique;
+    position: center;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  .hn ul {
+    list-style: none;
+    background-color: #444;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  .hn li {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+    line-height: 40px;
+    height: 40px;
+    border-bottom: 1px solid #888;
+  }
+   
+  .hn a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: .3s background-color;
+  }
+   
+  .hn a:hover {
+    background-color: #ffd700;
+    color: #444;
+  }
+   
+  .hn a.active {
+    background-color: #fff;
+    color: #444;
+    cursor: default;
+  }
+   
+  @media screen and (min-width: 600px) 
+  {
+    .hn li {
+      width: 120px;
+      border-bottom: none;
+      height: 50px;
+      line-height: 50px;
+      font-size: 1.4em;
+    }
+    
+    .hn li {
+      display: inline-block;
+      margin-right: -4px;
+    }
+   
+    .hn ul {
+      overflow: auto;
+      width: 600px;
+      margin: 0 auto;
+    }
+    .hn {
+      background-color: #444;
+    }
+     
+  }
