@@ -13,24 +13,25 @@ html {
   .tm-site-title {
     font-size: 4rem;
     text-align: center;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
+    border-top: 1px solid orangered;
+    border-bottom: 1px solid orangered;
     padding-top: 35px;
     padding-bottom: 35px;
+    color: orangered;
   }
   
   a {
-    color: #FFF;
+    color: white;
     transition: all 0.3s ease;
   }
   a:hover,
   a:focus {
-    color: #9CF;
+    color:orangered;
     text-decoration: none;
   }
   
-  .tm-white-text {
-    color: white;
+  .tm-orange-text {
+    color:orangered;
   }
   
   .tm-white-text:hover,
@@ -115,11 +116,9 @@ html {
   }
   
   #register {
-    padding-top: 180px;
     background-image: url(../img/tertiary.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 50% 30%;
     color: black;
   }
   
@@ -139,6 +138,7 @@ html {
   }
   
   #register .container {
+    padding-top: 15%;
     max-width: 900px;
   }
   
@@ -181,7 +181,7 @@ html {
     padding: 35px 30px;
     margin-top: 35px;
   }
-  
+
   .tm-bg-white {
     background-color: rgba(255, 255, 255, 0.6);
     border-radius: 10px;
@@ -241,7 +241,7 @@ html {
   }
   
   textarea:focus {
-    outline-color: #26a69a;
+    outline-color:orangered;
   }
   
   [type="checkbox"].filled-in:checked + span:not(.lever):after {
@@ -325,7 +325,7 @@ html {
   input[type="email"]:not(.browser-default).tm-input-white-bg {
     border: none;
     background-color: white;
-    color: black;
+    color:orangered;
     border-radius: 5px;
     font-size: 1.2rem;
     padding: 6px 15px;
@@ -599,8 +599,8 @@ html {
         navbar stays at the top part even if we scroll */
         position: sticky; 
         align-items: center;
-        justify-content: center;
-        top: 0px;
+        justify-content: left;
+      
       
     /*it specifies the mouse cursor to be displayed
         when it is pointed over the element */
@@ -614,7 +614,7 @@ html {
       
     .nav-list li {
         list-style: none;
-        padding: 26px 30px;
+        padding: 10px 40px;
     }
       
     .nav-list li a {
@@ -628,14 +628,15 @@ html {
       
     .rightNav {
         width: 50%;
-        text-align: right;
+        text-align: left;
     }
       
     #search {
-        padding: 5px;
-        font-size: 17px;
-        border: 2px solid grey;
-        border-radius: 9px;
+        max-width: 40%;
+        font-size: 80%;
+        border: 3px solid grey;
+        border-width: 2%;
+        border-radius: 3%;
     }
       
     .background {

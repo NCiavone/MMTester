@@ -12,19 +12,37 @@
 	-->
     <link rel="stylesheet" href="../public/css/styleMM.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
-    <link rel="bootstrap" href="../public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../public/css/bootstrap.min.css">
     <link rel="stylesheet" href="../public/css/materialize.min.css">
 </head>
 
 <body id="register">
-    <div class="container">
+     <!-- Nav Bar -->
+     <nav class="navbar background">
+        <!-- we have used list tag that is ul 
+             to list the items-->
+        <ul class="nav-list">
+            <li><a href="../views/index.ejs">Home</a></li>
+            <li><a href="../views/login.html">Login</a></li>
+            <li><a href="../views/signup.html">Sign-Up</a></li>
+            <li><a href="../views/survey.html">Survey</a></li>
+            <li><a href="..//views/register.html">Update</a></li>
+        </ul>
+        <!-- we have used rightnav in order to design
+             the seachbar properly by using CSS-->
+        <div class="rightNav">
+      <!-- the value that search bar will take is text -->
+            <input type="text" name="search" id="search" />
+            <button class="btn btn-sm">Search</button>
+        </div>
+    </nav>
+
+    <div class="container tm-bg-black">
         <div class="row">
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                 <header class="mb-5">
-                    <h3 class="mt-0 white-text">Sign-up Form</h3>
-                    <p class="grey-text mb-4">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-                    <p class="grey-text">Vestibulum neque neque, porttitor quis lacinia eu, iaculis id dui. Mauris quis velit lectus.
-                    </p>
+                    <h3 class="mt-0 orange-text">Sign-up Form</h3>
+                    <p class="grey-text mb-4">You can create a Muscle Maker&copy; account here! .</p>
                 </header>
             </div>
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
@@ -53,17 +71,14 @@
         <footer class="row tm-mt-big mb-3">
             <div class="col-xl-12">
                 <p class="text-center grey-text text-lighten-2 tm-footer-text-small">
-                    Copyright &copy; 2018 Company Name 
-                    
-                    - <a rel="nofollow" href="http://www.tooplate.com/view/2105-input">Input</a> by 
-                    <a rel="nofollow" href="http://tooplate.com" class="tm-footer-link">Tooplate</a>
+                    Muscle Maker &copy; 2021 Created by Nicholas Ciavone - CSI 2520: 12/10/2021
                 </p>
             </div>
         </footer>
     </div>
 
-    <script src="js/jquery-3.2.1.slim.min.js"></script>
-    <script src="js/materialize.min.js"></script>
+    <script src="../public/js/jquery-3.2.1.slim.min.js""></script>
+    <script src="../public/js/materialize.min.js"></script>
     <script>
         $(document).ready(function () {
             $('select').formSelect();
