@@ -102,36 +102,38 @@ html {
   }
   
   #home {
-    background-image: url(../img/homepg.jpg);
+   /* background-image: url(../img/homepg.jpg); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
+    color: silver;
   }
   
   #survey {
-    background-image: url(../img/secondary.jpg);
+    /* background-image: url(../img/secondary.jpg); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
+    color:silver;
   }
   
   #register {
-    background-image: url(../img/tertiary.jpg);
+    /* background-image: url(../img/tertiary.jpg); */
     background-size: cover;
     background-repeat: no-repeat;
-    color: black;
+    color: silver;
   }
   
   #application {
-    background-image: url(../img/quad.jpg);
+   /* background-image: url(../img/quad.jpg); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
-    color: black;
+    color:silver;
   }
   
   #login {
-    background-image: url(../img/fifth.jpg);
+   /* background-image: url(../img/fifth.jpg); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -302,17 +304,17 @@ html {
   
   .btn-large-white {
     background-color: white;
-    color: black;
+    color: orangered;
     font-size: 1.1rem;
   }
   .btn-large-white:hover,
   .btn-large-white:focus {
     background-color: #ccc;
-    color: black;
+    color: orangered;
   }
   
   .tm-footer-link {
-    color: white;
+    color: orangered;
   }
   
   .tm-footer-link:hover,
@@ -428,7 +430,7 @@ html {
   }
   
   .btn-white {
-    background-color: white;
+    background-color: orangered;
     color: black;
     border-radius: 5px;
     text-transform: capitalize;
@@ -600,6 +602,7 @@ html {
         position: sticky; 
         align-items: center;
         justify-content: left;
+        
       
       
     /*it specifies the mouse cursor to be displayed
@@ -614,7 +617,6 @@ html {
       
     .nav-list li {
         list-style: none;
-        padding: 10px 40px;
     }
       
     .nav-list li a {
@@ -634,7 +636,7 @@ html {
     #search {
         max-width: 40%;
         font-size: 80%;
-        border: 3px solid grey;
+        border: 3px solid black;
         border-width: 2%;
         border-radius: 3%;
     }
