@@ -101,14 +101,14 @@ html {
   }
   
   #home {
-    background-image: url(../img/input-bg-05.jpg);
+    background-image: url(../img/homepg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
   }
   
   #survey {
-    background-image: url(../img/input-bg-06.jpg);
+    background-image: url(../img/secondary.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
@@ -116,7 +116,7 @@ html {
   
   #register {
     padding-top: 180px;
-    background-image: url(../img/input-bg-01.jpg);
+    background-image: url(../img/tertiary.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 30%;
@@ -124,7 +124,7 @@ html {
   }
   
   #application {
-    background-image: url(../img/input-bg-03.jpg);
+    background-image: url(../img/quad.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
@@ -132,7 +132,7 @@ html {
   }
   
   #login {
-    background-image: url(../img/input-bg-04.jpg);
+    background-image: url(../img/fifth.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -585,4 +585,60 @@ html {
       margin-top: 80px;
     }
   }
+  * {
+    /* Here i made the margin and padding  0 */
+      margin: 0; 
+      
+        padding: 0;
+    }
+      
+    .navbar {
+        display: flex;
+      
+    /* This is used to make the navbar sticky, So that the
+        navbar stays at the top part even if we scroll */
+        position: sticky; 
+        align-items: center;
+        justify-content: center;
+        top: 0px;
+      
+    /*it specifies the mouse cursor to be displayed
+        when it is pointed over the element */
+        cursor: pointer;
+    }
+      
+    .nav-list {
+        width: 50%;
+        display: flex;
+    }
+      
+    .nav-list li {
+        list-style: none;
+        padding: 26px 30px;
+    }
+      
+    .nav-list li a {
+        text-decoration: none;
+        color: white;
+    }
+      
+    .nav-list li a:hover {
+        color: black;
+    }
+      
+    .rightNav {
+        width: 50%;
+        text-align: right;
+    }
+      
+    #search {
+        padding: 5px;
+        font-size: 17px;
+        border: 2px solid grey;
+        border-radius: 9px;
+    }
+      
+    .background {
+        background: rgba(218, 118, 3, 0.616) 
+    }
   

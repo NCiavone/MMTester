@@ -10,6 +10,7 @@
     Template 2105 Input
 	http://www.tooplate.com/view/2105-input
 	-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
     <link rel="stylesheet" href="../public/css/styleMM.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
     <link rel="bootstrap" href="../public/css/bootstrap.min.css">
@@ -17,6 +18,24 @@
 </head>
 
 <body id="survey" class="font-weight-light">
+    <nav class="navbar background">
+        <!-- we have used list tag that is ul 
+             to list the items-->
+        <ul class="nav-list">
+            <li><a href="../views/index.ejs">Home</a></li>
+            <li><a href="../views/login.html">Login</a></li>
+            <li><a href="../views/signup.html">Sign-Up</a></li>
+            <li><a href="../views/survey.html">Survey</a></li>
+        </ul>
+        <!-- we have used rightnav in order to design
+             the seachbar properly by using CSS-->
+        <div class="rightNav">
+      <!-- the value that search bar will take is text -->
+            <input type="text" name="search" id="search" />
+            <button class="btn btn-sm">Search</button>
+        </div>
+    </nav>
+
     <div class="container tm-container-max-800">
         <div class="row">
             <div class="col-12">
