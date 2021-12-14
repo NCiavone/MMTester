@@ -59,11 +59,68 @@ Notes:
                             // Popup window code
                             function newPopup(url) {
                                 popupWindow = window.open(
-                                    url,'popUpWindow','height=300,width=400,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+                                    url,'popUpWindow','height=600,width=800,left=50,top=50,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=center,directories=no,status=yes')
                             }
                             </script>
-                        <p><a href="JavaScript:newPopup('bicep.html');">Dumbell Bicep Curl</a></p>
-                        <p><a href="JavaScript:newPopup('shoulder.html');">Dumbell Shoulder Press</a></p>
+                            <table>
+                                <tr>
+                                  <th>Exercise Id</th>
+                                  <th>Exercise Name</th>
+                                  <th>Total Reps</th>
+                                  <th>Weight</th>
+                                  <th>Each/Together</th>
+                                </tr>
+                                <tr>
+                                  <td>001</td>
+                                  <td><a href="JavaScript:newPopup('bicep.html');">Dumbell Bicep Curl</a></td>
+                                  <td>3 sets for 10 reps</td>
+                                  <td>20 lbs</td>
+                                  <td class = "centerText">Each <p class="tm-form-description small">(Body Weight / 10)</p></td>
+                                </tr>
+                                <tr>
+                                    <td>002</td>
+                                    <td><a href="JavaScript:newPopup('shoulder.html');">Dumbell Shoulder Press</a></td>
+                                    <td>3 sets for 10 reps</td>
+                                    <td>25 lbs</td>
+                                    <td class = "centerText">Each<p class="tm-form-description small">(Body Weight / 10)</p></td>
+                                </tr>
+                                <tr>
+                                    <td>003</td>
+                                    <td><a href="JavaScript:newPopup('reardelt.html');">Rear Delt</a></td>
+                                    <td>3 sets for 10 reps</td>
+                                    <td>20 lbs</td>
+                                    <td class = "centerText">Each<p class="tm-form-description small">(Body Weight / 12)</p></td>
+                                </tr>
+                                <tr>
+                                    <td>004</td>
+                                    <td><a href="JavaScript:newPopup('cpress.html');">Chest Press</a></td>
+                                    <td>3 sets for 10 reps</td>
+                                    <td>50 lbs</td>
+                                    <td class = "centerText">Together<p class="tm-form-description small">(Body Weight / 8)</p></td>
+                                </tr>
+                                <tr>
+                                    <td>005</td>
+                                    <td><a href="JavaScript:newPopup('cfly.html');">Chest Fly</a></td>
+                                    <td>3 sets for 10 reps</td>
+                                    <td>25 lbs</td>
+                                    <td class = "centerText">Each<p class="tm-form-description small">(Body Weight / 4)</p></td>
+                                </tr>
+                                <tr>
+                                    <td>006</td>
+                                    <td><a href="JavaScript:newPopup('triceps.html');">Triceps Press</a></td>
+                                    <td>3 sets for 10 reps</td>
+                                    <td>20 lbs</td>
+                                    <td class = "centerText">Together<p class="tm-form-description small">(Body Weight / 8)</p></td>
+                                </tr>
+                                <!-- <tbody>
+                                <% print.forEach(function (user) { %>
+                                <tr>  
+                                        <td><%= user. %></td>  
+                                </tr>                                   
+                                 <% }) %>
+                                </tbody> -->
+                              </table>
+                              
                 </div>   
             </div>    
                 <div class="tm-bg-black tm-form-block">
@@ -73,11 +130,75 @@ Notes:
                             // Popup window code
                             function newPopup(url) {
                                 popupWindow = window.open(
-                                    url,'popUpWindow','height=300,width=400,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+                                    url,'popUpWindow','height=300,width=400,left=10, right= 90,top=10,resizable=no,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
                             }
                             </script>
-                        <p><a href="JavaScript:newPopup('bicep.html');">Dumbell Bicep Curl</a></p>
-                        <p><a href="JavaScript:newPopup('shoulder.html');">Dumbell Shoulder Press</a></p>
+                        <table>
+                            <tr>
+                              <th>Exercise Id</th>
+                              <th>Exercise Name</th>
+                              <th>Total Reps</th>
+                              <th>Weight</th>
+                              <th>Each/Together</th>
+                            </tr>
+                            <tr>
+                              <td>010</td>
+                              <td><a href="JavaScript:newPopup('legpress.html');">Leg Press</a></td>
+                              <td>3 sets for 10 reps</td>
+                              <td>100 lbs</td>
+                              <td class = "centerText">Together<p class="tm-form-description small">(Body Weight / 2)</p></td>
+                            </tr>
+                            <tr>
+                                <td>011</td>
+                                <td><a href="JavaScript:newPopup('hamstring.html');">Hamstring Curl</a></td>
+                                <td>3 sets for 10 reps</td>
+                                <td>25 lbs</td>
+                                <td class = "centerText">Each<p class="tm-form-description small">(Body Weight / 4)</p></td>
+                            </tr>
+                            <tr>
+                                <td>012</td>
+                                <td><a href="JavaScript:newPopup('calves.html');">Calve Raise</a></td>
+                                <td>3 sets for 10 reps</td>
+                                <td>20 lbs</td>
+                                <td class = "centerText">Each<p class="tm-form-description small">(Body Weight / 8)</p></td>
+                            </tr>
+                            <tr>
+                                <td>013</td>
+                                <td><a href="JavaScript:newPopup('legext.html');">Leg Extension</a></td>
+                                <td>3 sets for 10 reps</td>
+                                <td>50 lbs</td>
+                                <td class = "centerText">Together<p class="tm-form-description small">(Body Weight / 4)</p></td>
+                            </tr>
+                            <tr>
+                                <td>0014</td>
+                                <td><a href="JavaScript:newPopup('backext.html');">Back Extension</a></td>
+                                <td>3 sets for 10 reps</td>
+                                <td>25 lbs</td>
+                                <td class = "centerText">Each<p class="tm-form-description small">(Body Weight / 2)</p></td>
+                            </tr>
+                            <tr>
+                                <td>015</td>
+                                <td><a href="JavaScript:newPopup('hipabd.html');">Hip Abduction</a></td>
+                                <td>3 sets for 10 reps</td>
+                                <td>20 lbs</td>
+                                <td class = "centerText">Together<p class="tm-form-description small">(Body Weight / 6)</p></td>
+                            </tr>
+                            <tr>
+                                <td>015</td>
+                                <td><a href="JavaScript:newPopup('hipadd.html');">Hip Adduction</a></td>
+                                <td>3 sets for 10 reps</td>
+                                <td>20 lbs</td>
+                                <td class = "centerText">Together<p class="tm-form-description small">(Body Weight / 6)</p></td>
+                            </tr>
+                             <!--<tbody>
+                            <% print.forEach(function (user) { %>
+                            <tr>  
+                                    <td><%= user. %></td>  
+                            </tr>                                   
+                             <% }) %>
+                            </tbody> -->
+                          </table>
+                          
                 </div>       
         </div>  
     </div>     

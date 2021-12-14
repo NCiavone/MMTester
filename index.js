@@ -71,7 +71,7 @@ app.post("/deleteperson", (req, res) => {
   
   // Reading person information
   app.get("/readperson", (req, res) => {
-    let sql = `SELECT * FROM students`;
+    let sql = `SELECT * FROM person`;
     db.query(sql, (err, result) => {
       if (err) {
         throw err;
@@ -79,6 +79,66 @@ app.post("/deleteperson", (req, res) => {
       res.render("readData", { data: result });
     });
   });
+
+  // Getting weight
+  //Routine A
+  // Bicep Curl
+  app.get ("/readbicep"), (req,res) => {
+    let sql = `SELECT weight FROM person DIV 10`;
+    db.query(sql, (err,result) => {
+        if (err) {
+            throw err;
+        }
+        res.render("readData", {data, result});
+  });
+  // Shoulder Press
+  app.get ("/readshoulder"), (req,res) => {
+    let sql = `SELECT weight FROM person DIV 10`;
+    db.query(sql, (err,result) => {
+        if (err) {
+            throw err;
+        }
+        res.render("readData", {data, result});
+  });
+  // readDelt
+  app.get ("/readdelt"), (req,res) => {
+    let sql = `SELECT weight FROM person DIV 12`;
+    db.query(sql, (err,result) => {
+        if (err) {
+            throw err;
+        }
+        res.render("readData", {data, result});
+  });
+  // chestPress
+  app.get ("/readcpress"), (req,res) => {
+    let sql = `SELECT weight FROM person DIV 10`;
+    db.query(sql, (err,result) => {
+        if (err) {
+            throw err;
+        }
+        res.render("readData", {data, result});
+  });
+  // chestFly
+  app.get ("/readcfly"), (req,res) => {
+    let sql = `SELECT weight FROM person DIV 10`;
+    db.query(sql, (err,result) => {
+        if (err) {
+            throw err;
+        }
+        res.render("readData", {data, result});
+  });
+  // Triceps
+  app.get ("/readtriceps"), (req,res) => {
+    let sql = `SELECT weight FROM person DIV 10`;
+    db.query(sql, (err,result) => {
+        if (err) {
+            throw err;
+        }
+        res.render("readData", {data, result});
+  });
+
+
+  // Routine B
 
 
 //start the Server
