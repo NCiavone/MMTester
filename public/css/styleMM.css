@@ -13,11 +13,12 @@ html {
   .tm-site-title {
     font-size: 4rem;
     text-align: center;
-    border-top: 1px solid orangered;
-    border-bottom: 1px solid orangered;
+    border-top: 1px solid skyblue;
+    border-bottom: 1px solid skyblue;
     padding-top: 35px;
     padding-bottom: 35px;
-    color: orangered;
+    color: skyblue;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
   
   a {
@@ -26,12 +27,14 @@ html {
   }
   a:hover,
   a:focus {
-    color:orangered;
+    color: skyblue;
     text-decoration: none;
   }
   
-  .tm-orange-text {
-    color:orangered;
+  .tm-blue-text {
+    color:skyblue;
+    text-decoration: solid;
+    font-style: oblique;
   }
   
   .tm-white-text:hover,
@@ -102,7 +105,7 @@ html {
   }
   
   #home {
-   /* background-image: url(../img/homepg.jpg); */
+    background-image: url(../img/simple.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
@@ -110,7 +113,7 @@ html {
   }
   
   #survey {
-    /* background-image: url(../img/secondary.jpg); */
+    background-image: url(../img/secondary.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
@@ -118,14 +121,14 @@ html {
   }
   
   #register {
-    /* background-image: url(../img/tertiary.jpg); */
+    background-image: url(../img/tertiary.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     color: silver;
   }
   
   #application {
-   /* background-image: url(../img/quad.jpg); */
+    background-image: url(../img/quad.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
@@ -133,7 +136,7 @@ html {
   }
   
   #login {
-   /* background-image: url(../img/fifth.jpg); */
+    background-image: url(../img/fifth.jpg); 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -235,6 +238,8 @@ html {
   textarea,
   input {
     color: white;
+    align-items: center;
+    text-align: center;
   }
   
   textarea {
@@ -243,7 +248,7 @@ html {
   }
   
   textarea:focus {
-    outline-color:orangered;
+    outline-color:skyblue;
   }
   
   [type="checkbox"].filled-in:checked + span:not(.lever):after {
@@ -304,17 +309,17 @@ html {
   
   .btn-large-white {
     background-color: white;
-    color: orangered;
+    color:skyblue;
     font-size: 1.1rem;
   }
   .btn-large-white:hover,
   .btn-large-white:focus {
     background-color: #ccc;
-    color: orangered;
+    color: skyblue;
   }
   
   .tm-footer-link {
-    color: orangered;
+    color: skyblue;
   }
   
   .tm-footer-link:hover,
@@ -327,7 +332,7 @@ html {
   input[type="email"]:not(.browser-default).tm-input-white-bg {
     border: none;
     background-color: white;
-    color:orangered;
+    color:skyblue;
     border-radius: 5px;
     font-size: 1.2rem;
     padding: 6px 15px;
@@ -372,18 +377,18 @@ html {
   
   .tm-form-white ::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: black;
+    color: skyblue;
     opacity: 1; /* Firefox */
   }
   
   .tm-form-white :-ms-input-placeholder {
     /* Internet Explorer 10-11 */
-    color: black;
+    color: skyblue;
   }
   
   .tm-form-white ::-ms-input-placeholder {
     /* Microsoft Edge */
-    color: black;
+    color: skyblue;
   }
   
   .tm-form-white [type="radio"]:not(:checked) + span:before,
@@ -430,7 +435,7 @@ html {
   }
   
   .btn-white {
-    background-color: orangered;
+    background-color: skyblue;
     color: black;
     border-radius: 5px;
     text-transform: capitalize;
@@ -636,12 +641,17 @@ html {
     #search {
         max-width: 40%;
         font-size: 80%;
-        border: 3px solid black;
+        border: 3px solid white;
         border-width: 2%;
         border-radius: 3%;
     }
       
     .background {
-        background: rgba(218, 118, 3, 0.616) 
+        background: skyblue;
+    }
+
+    .centerText {
+      text-align: center;
+      justify-content: center;
     }
   

@@ -1,3 +1,13 @@
+<!-------------------------------------------------------------------------------
+Name: register.html
+Author: @NCiavone
+Date Created: 12/3/21
+Purpose: The html update info page
+Notes:
+    -This is required to be under /views
+    -NEEDS to be updated to an active applcation (.ejs) file.
+    -Update your Account
+------------------------------------------------------------------------------->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,11 +28,12 @@
         <!-- we have used list tag that is ul 
              to list the items-->
         <ul class="nav-list">
-            <li><a href="../views/index.ejs">Home</a></li>
-            <li><a href="../views/login.html">Login</a></li>
-            <li><a href="../views/signup.html">Sign-Up</a></li>
-            <li><a href="../views/survey.html">Survey</a></li>
-            <li><a href="../views/register.html">Update</a></li>
+            <li><a href="../index.ejs">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Sign-Up</a></li>
+            <li><a href="survey.html">Survey</a></li>
+            <li><a href="register.html">Update</a></li>
+            <li><a href="routines.html">Routines</a></li>
         </ul>
         <!-- we have used rightnav in order to design
              the seachbar properly by using CSS-->
@@ -72,13 +83,56 @@
                     <div class="row">
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 pl-0 tm-pr-xs-0">
                             <select name="Body Type">
-                                <option value="-">Body-Type</option>
-                                <option value="Bangkok">Athletic</option>
-                                <option value="Yangon">Overweight</option>
-                                <option value="Mumbai">Average</option>
-                                <option value="Singapore">Lean</option>
+                                <option value="body">Body-Type</option>
+                                <option value="athletic">Athletic</option>
+                                <option value="overweight">Overweight</option>
+                                <option value="average">Average</option>
+                                <option value="lean">Lean</option>
                             </select>
                         </div>
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 pl-0 tm-pr-xs-0">
+                                <select name="Height">
+                                    <option value="fourone">4'1"</option>
+                                    <option value="fourtwo">4'2"</option>
+                                    <option value="fourthree">4'3"</option>
+                                    <option value="fourfour">4'4"</option>
+                                    <option value="fourfive">4'5"</option>
+                                    <option value="foursix">4'6"</option>
+                                    <option value="fourseven">4'7"</option>
+                                    <option value="foureight">4'8"</option>
+                                    <option value="fournine">4'9"</option>
+                                    <option value="fourten">4'10"</option>
+                                    <option value="foureleven">4'11"</option>
+
+                                    <option value="five">5'0"</option> 
+                                    <option value="fiveone">5'1"</option>
+                                    <option value="fivetwo">5'2"</option>
+                                    <option value="fivethree">5'3"</option>
+                                    <option value="fivefour">5'4"</option>
+                                    <option value="fivefive">5'5"</option>
+                                    <option value="fivesix">5'6"</option>
+                                    <option value="fiveseven">5'7"</option>
+                                    <option value="fiveeight">5'8"</option>
+                                    <option value="fivenine">5'9"</option>
+                                    <option value="fiverten">5'10"</option>
+                                    <option value="fiveeleven">5'11"</option>
+
+                                    <option value="six">6'0"</option>
+                                    <option value="sixone">6'1"</option>
+                                    <option value="sixtwo">6'2"</option>
+                                    <option value="sixthree">6'3"</option>
+                                    <option value="sixfour">6'4"</option>
+                                    <option value="sixfive">6'5"</option>
+                                    <option value="sixsix">6'6"</option>
+                                    <option value="sixseven">6'7"</option>
+                                    <option value="sixeight">6'8"</option>
+                                    <option value="sixnine">6'9"</option>
+                                    <option value="sixten">6'10"</option>
+                                    <option value="sixeleven">6'11"</option>
+
+                                </select>
+                            </div>
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 pr-0 tm-pl-xs-0">
                             <div class="input-field">
                                 <input placeholder="Weight" id="weight" name="weight" type="text" >
@@ -90,21 +144,18 @@
                     </div>
                 </form>
             </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 tm-register-col-r">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 tm-register-col-r centerText">
                 <header class="mb-5">
-                    <h3 class="mt-0 text-white">REGISTER Yourself</h3>
-                    <p class="grey-text">Aenean tincidunt, enim nec blandit lobortis, ante enim ultrices eros, et laoreet augue libero id nunc.
-                        Proin semper feugiat ultrices.</p>
-                    <p class="grey-text">Aenean a efficitur magna, sed dignissim odio. Praesent pretium lectus ac nunc ultrices, ac volutpat orci
-                        viverra.
-                    </p>
+                    <h3 class="mt-0 tm-blue-text">REGISTER Yourself</h3>
+                    <p class="grey-text centerText">Make sure you update with the most accurate information possible. (Doctor records are reccomended!)</p>
+                    <p class="grey-text centerText">Give the system some time to update new information.</p>
                 </header>
 
             </div>
         </div>
         <footer class="row tm-mt-big mb-3">
             <div class="col-xl-12">
-                <p class="text-center grey-text text-lighten-2 tm-footer-text-small">
+                <p class="text-center grey-text text-lighten-2 tm-footer-text-small centerText">
                     Muscle Maker &copy; 2021 Created by Nicholas Ciavone - CSI 2520: 12/10/2021
                 </p>
             </div>

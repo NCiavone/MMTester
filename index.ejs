@@ -1,4 +1,13 @@
 
+<!-------------------------------------------------------------------------------
+Name: index.ejs
+Author: @NCiavone
+Date Created: 12/8/21
+Purpose: The html + embedded javascript file
+Notes:
+    -Need to be available for the index.js file
+    -Home page for the entire system.
+------------------------------------------------------------------------------->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,14 +15,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Muscle Maker" />
-    <meta name=" keywords" content=" HTML,DOM,HTML, tags, attributes" />
-    <meta name=" author" content="Nicholas Ciavone" />
+    <meta name="keywords" content=" HTML,DOM,HTML, tags, attributes" />
+    <meta name="author" content="Nicholas Ciavone" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muscle Maker</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
-    <link rel="stylesheet" href="../public/css/styleMM.css">>
-    <link rel="bootstrap" href="../public/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../public/css/materialize.min.css">
+    <link rel="stylesheet" href="public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/materialize.min.css">
+    <link rel="stylesheet" href="public/css/styleMM.css">
     <!--This is from Font Awesome-->
     <script src="https://kit.fontawesome.com/4d808d741c.js" crossorigin="anonymous"></script>
 
@@ -31,24 +40,27 @@
         <div class="row">
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                 <div class="tm-home-left mt-3 tm-bg-black font-weight-light">
-                    <p class="tm-mb-35">Muscle Maker&copy; is designed to help individuals with minimal strength training experince who have no access to a personal trainer.</p>
+                    <p class="tm-mb-35"><b class ="tm-blue-text">Muscle Maker</b>&copy; is designed to help individuals with minimal strength training experince or no access to a personal trainer, get a meaningful and safe wokrkout.</p>
                     <p class="tm-mb-35">For best results, please create an account with most pertinent data possible.</p>
                     <p>Thank you!</p>
                 </div>
             </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 centerText">
                 <ul class="list-group tm-home-list tm-bg-black font-weight-light">
                     <li class="d-flex justify-content-between align-items-center">
-                        <a href="register.html" class="tm-white-text">Update</a>
+                        <a href="views/register.html" class="tm-white-text">Update</a>
                     </li>
                     <li class="d-flex justify-content-between align-items-center">
-                        <a href="signup.html" class="tm-white-text">Sign Up</a>
+                        <a href="views/signup.html" class="tm-white-text">Sign Up</a>
                     </li>
                     <li class="d-flex justify-content-between align-items-center">
-                        <a href="login.html" class="tm-white-text">Login</a>
+                        <a href="views/login.html" class="tm-white-text">Login</a>
                     </li>
                     <li class="d-flex justify-content-between align-items-center">
-                        <a href="survey.html" class="tm-white-text">Survey</a>
+                        <a href="views/survey.html" class="tm-white-text">Survey</a>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center">
+                        <a href="views/routines.html" class="tm-white-text">Routines</a>
                     </li>
                 </ul>
             </div>
@@ -56,7 +68,7 @@
     </div>
     <footer class="row tm-mt-big mb-3">
         <div class="col-xl-12 text-center font-weight-light">
-            <p class="d-inline-block tm-bg-black white-text py-2 tm-px-5">
+            <p class="d-inline-block tm-bg-black white-text py-2 tm-px-5 centerText">
                 Muscle Maker &copy; 2021 Created by Nicholas Ciavone - CSI 2520: 12/10/2021
             </p>
         </div>
