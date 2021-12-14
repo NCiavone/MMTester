@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Muscle Maker" />
+        <meta name="keywords" content=" HTML,DOM,HTML, tags, attributes" />
+        <meta name="author" content="Nicholas Ciavone" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Muscle Maker</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+        <link rel="stylesheet" href="../public/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../public/css/materialize.min.css">
+        <link rel="stylesheet" href="../public/css/styleMM.css">
+        <!--This is from Font Awesome-->
+        <script src="https://kit.fontawesome.com/4d808d741c.js" crossorigin="anonymous"></script>
+    
+    </head>
+
+    <div class="container">
+      <main>
+        <h2>
+          This page contains the demo of the four CRUD operations executed
+          against a Full Stack Web App
+        </h2>
+        <p>The application was created using the following technologies</p>
+        <ul>
+          <li>Front End -- HTML, CSS, Vanilla JS</li>
+          <li>
+            Back End -- Node.js with server-side framework express.js and
+            embedded javascript for server side content rendering
+          </li>
+          <li>Database -- MySQL server community edition version 8.0</li>
+        </ul>
+      </main>
+    </div>
+
+    <div class="container">
+      <h3>CRUD ops - READ</h3>
+      <h4>Read Data from The Database</h4>
+      <div class="card card-body">
+        <ul class="list-group">
+          <%data.forEach((item)=>{%>
+          <li class="list-group-item">
+            id: <%=item.id%> &nbsp; Name: <%= item.name%> &nbsp; Email:
+            <%=item.email%>
+          </li>
+          <%});%>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,7 +1,25 @@
-const express = require('express');
+const express = require("express");
+const mysql = require("mysql");
+const ejs = require("ejs");
 
+// create express app
 const app = new express;
 
+const db = mysql.createConnection({
+    host: "localhost",
+    user: "root",
+    password: "Rocknroll1!",
+    database: "mmaccount",
+});
+
+//connect w the db
+db.connect((err) => {
+    if(err) {
+        throw err;
+    } else {
+        console.log(`Successfully connected to the Database...`);
+    }
+})
 
 // parser
 app.use(express.json());
