@@ -31,8 +31,8 @@ app.set("view engine", "ejs");
 app.use("/public", express.static(__dirname + "/public"));
 
 //Route to homepage
-app.get('/views',(req,res) => {
-    res.render('index');
+app.get('/',(req,res) => {
+    res.render('index.ejs');
 
 });
 
