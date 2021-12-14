@@ -49,35 +49,38 @@ Notes:
             <header class="mt-5 mb-5 text-center">
                 <h1 class="font-weight-light tm-form-title centerText tm-blue-text">Your Routines</h1>
                 <p class="tm-form-description centerText">Here is where the <b class ="tm-blue-text">Muscle Maker</b>&copy; routines will be! </p>
-                <p class="tm-form-description small">To update your account information for new routines click <a href="../views/signup.html">here</a></p>
+                <p class="tm-form-description small centerText">To update your account information for new routines click <a href="../views/signup.ejs">here</a></p>
             </header>
 
-            <div class="container">
-                <h3>Read the file</h3>
-                <h4>Read Data from The Database</h4>
-                <div id="main" >
-                  <form
-                
-                    action="/readperson"
-                    method="get"
-                    id="read"
-                  >
-                 
-                <input type="submit" value = "SUBMIT" class="waves-effect btn-large btn-large-white px-4 black-text" />
-                  </form>
-                </div>
-                <script language="javascript">
-                    var popupWindow = null;
-                    function centeredPopup(url,winName,w,h,scroll){
-                    LeftPosition = (screen.width) ? (screen.width-w)/2 : 0;
-                    TopPosition = (screen.height) ? (screen.height-h)/2 : 0;
-                    settings =
-                    'height='+h+',width='+w+',top='+TopPosition+',left='+LeftPosition+',scrollbars='+scroll+',resizable'
-                    popupWindow = window.open(url,winName,settings)
-                    }
-                    </script>
-                   <p><a href="../views/bicep.html" onclick="positionedPopup(this.href,'myWindow','700','300','100','200','yes');return false">Positioned Popup</a></p>
-            </div>     
+            <div class="tm-bg-black tm-form-block">
+                    <h4 class="mb-4 tm-blue-text centerText">Upper Body Routine (A)</h4>
+                    <div class="row centerText">
+                        <script type="text/javascript">
+                            // Popup window code
+                            function newPopup(url) {
+                                popupWindow = window.open(
+                                    url,'popUpWindow','height=300,width=400,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+                            }
+                            </script>
+                        <p><a href="JavaScript:newPopup('bicep.html');">Dumbell Bicep Curl</a></p>
+                        <p><a href="JavaScript:newPopup('shoulder.html');">Dumbell Shoulder Press</a></p>
+                </div>   
+            </div>    
+                <div class="tm-bg-black tm-form-block">
+                    <h4 class="mb-4 tm-blue-text centerText">Lower Body Routine (B)</h4>
+                    <div class="row centerText">
+                        <script type="text/javascript">
+                            // Popup window code
+                            function newPopup(url) {
+                                popupWindow = window.open(
+                                    url,'popUpWindow','height=300,width=400,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+                            }
+                            </script>
+                        <p><a href="JavaScript:newPopup('bicep.html');">Dumbell Bicep Curl</a></p>
+                        <p><a href="JavaScript:newPopup('shoulder.html');">Dumbell Shoulder Press</a></p>
+                </div>       
+        </div>  
+    </div>     
     
 
     <script src="../public/js/jquery-3.2.1.slim.min.js"></script>

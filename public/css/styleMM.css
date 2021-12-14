@@ -11,14 +11,15 @@ html {
   }
   
   .tm-site-title {
-    font-size: 4rem;
+    font-size: 6rem;
     text-align: center;
     border-top: 1px solid skyblue;
     border-bottom: 1px solid skyblue;
     padding-top: 35px;
     padding-bottom: 35px;
     color: skyblue;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:'Courier New', Courier, monospace;
+   
   }
   
   a {

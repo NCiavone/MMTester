@@ -45,70 +45,73 @@ Notes:
         </div>
     </nav>
 
-    <div class="container tm-container-max-800">
+    <div class="container tm-container-max-800 centerText">
         <div class="row">
             <div class="col-12">
                 <header class="mt-5 mb-5 text-center">
-                    <h1 class="font-weight-light tm-form-title centerText tm-blue-text">Your Questionnaire Design</h1>
-                    <p class="tm-form-description">Sed nunc leo, ullamcorper in facilisis feugiat, pulvinar sed est. Mauris varius sem erat, at faucibus
-                        quam hendrerit eu. Quisque vel malesuada tortor.</p>
+                    <h1 class="font-weight-light tm-form-title centerText tm-blue-text">Muscle Maker User Survey</h1>
+                    <p class="tm-form-description">We love being able to learn from our mistakes and successes. Therefor we have created a survey for you to fill out, letting us know what we can improve on next!</p>
                 </header>
                 <form action="" method="post">
                     <div class="tm-bg-black tm-form-block">
-                        <p class="mb-4">1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tellus tortor, vehicula quis sollicitudin
-                            blandit, suscipit et lorem. Ut vitae gravida leo.</p>
+                        <p class="mb-4">1. Did you enjoy your Muscle Maker experince?</p>
                         <ul class="ml-3">
                             <li>
                                 <label>
                                     <input class="with-gap" name="group1" value="value1" type="radio" />
-                                    <span>A. Nam porttitor ipsum id iaculis</span>
+                                    <span>A. Absolutely!</span>
                                 </label>
                             </li>
                             <li>
                                 <label>
                                     <input class="with-gap" name="group1" value="value2" type="radio" />
-                                    <span>B. Curabitur laoreet risus justo</span>
+                                    <span>B. Somehwhat</span>
                                 </label>
                             </li>
                             <li>
                                 <label>
                                     <input class="with-gap" name="group1" value="value3" type="radio" />
-                                    <span>C. Vestibulum ante ipsum primis</span>
+                                    <span>C. Not Very Much</span>
                                 </label>
                             </li>
                             <li>
                                 <label>
                                     <input class="with-gap" name="group1" value="value4" type="radio" />
-                                    <span>D. Proin et sem vel mi pretium</span>
+                                    <span>D. Terrible </span>
                                 </label>
                             </li>
                         </ul>
                     </div>
                     <div class="tm-bg-black tm-form-block">
-                        <p class="mb-4">2. Quisque vel malesuada tortor. Class aptent taciti sociosqu and litora torquent per conubia nostra,
-                            per inceptos himenaeos.</p>
+                        <p class="mb-4">2. The routines were...</p>
                         <div class="row">
                             <div class="col-xl-6 mb-4">
-                                <textarea class="p-3" name="description" cols="30" rows="4" placeholder="Your description"></textarea>
+                                <textarea class="p-3" name="description" cols="30" rows="4" placeholder="Enter routine comments here!"></textarea>
                             </div>
                             <div class="col-xl-6">
                                 <ul>
                                     <li>
                                         <label>
-                                            <input type="checkbox" name="choice1" class="filled-in" checked="checked" />
-                                            <span>Choice One</span>
+                                            <input type="checkbox" name="choice1" class="filled-in" />
+                                            <span>Easy</span>
                                         </label>
                                     </li>
                                     <li>
                                         <label>
-                                            <input type="checkbox" name="choice2" class="filled-in" checked="checked" />
-                                            <span>Second Choice</span>
+                                            <input type="checkbox" name="choice2" class="filled-in" />
+                                            <span>Difficult</span>
                                         </label>
                                     </li>
                                     <li>
                                         <label>
                                             <input type="checkbox" name="choice3" class="filled-in" />
-                                            <span>Third Choice</span>
+                                            <span>Confusing</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" name="choice4" class="filled-in" />
+                                            <span>Just Right</span>
                                         </label>
                                     </li>
                                 </ul>
@@ -118,27 +121,33 @@ Notes:
 
                     </div>
                     <div class="tm-bg-black tm-form-block">
-                        <p class="mb-4">3. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Class
-                            aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                        <p class="mb-4">3. Please awnser the questions below.</p>
                         <div class="row mb-4">
                             <div class="col-xl-6">
                                 <div class="input-field">
-                                    <select name="occupation" id="occupation">
-                                        <option value="">Your Occupation</option>
-                                        <option value="1">Sales Manager</option>
-                                        <option value="2">Marketing Manager</option>
-                                        <option value="3">Accountant</option>
-                                        <option value="4">Director</option>
-                                        <option value="5">Executive</option>
+                                    <select name="pre_experience" id="pre_experience">
+                                        <option value="">Your Experience previous to Muscle Maker</option>
+                                        <option value="1">Novice</option>
+                                        <option value="2">Intermediate</option>
+                                        <option value="3">Apprentice</option>
+                                        <option value="4">Expert</option>
+                                        <option value="5">Master</option>
                                     </select>
+                                </div>
+                                <select name="post_experience" id="post_experience">
+                                    <option value="">Your Experience after Muscle Maker</option>
+                                    <option value="6">Novice</option>
+                                    <option value="7">Intermediate</option>
+                                    <option value="8">Apprentice</option>
+                                    <option value="9">Expert</option>
+                                    <option value="10">Master</option>
+                                </select>
                                 </div>
                                 <div class="input-field">
                                     <select name="income" id="income">
-                                        <option value="">Income Level</option>
-                                        <option value="25">$25,000</option>
-                                        <option value="45">$45,000</option>
-                                        <option value="65">$65,000</option>
-                                        <option value="85">$85,000</option>
+                                        <option value="">Did you hit your fitness goals?</option>
+                                        <option value="11">Yes</option>
+                                        <option value="12">No</option>
                                     </select>
                                 </div>
                                 <div class="input-field">
