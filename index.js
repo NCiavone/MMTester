@@ -32,7 +32,7 @@ app.use("/public", express.static(__dirname + "/public"));
 
 //Route to homepage
 app.get('/',(req,res) => {
-    res.render('index.ejs');
+    res.render('index');
 
 });
 
