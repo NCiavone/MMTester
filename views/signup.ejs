@@ -1,0 +1,177 @@
+
+<!-------------------------------------------------------------------------------
+Name: signup.html
+Author: @NCiavone
+Date Created: 12/3/21
+Purpose: The html signup form
+Notes:
+    -This is required to be under /views
+    -NEEDS to be updated to an active applcation (.ejs) file.
+    -Create your Account
+------------------------------------------------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="../public/css/styleMM.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+    <link rel="stylesheet" href="../public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../public/css/materialize.min.css">
+</head>
+
+<body id="register">
+     <!-- Nav Bar -->
+     <nav class="navbar background">
+        <!-- we have used list tag that is ul 
+             to list the items-->
+        <ul class="nav-list">
+            <li><a href="index.ejs">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.ejs">Sign-Up</a></li>
+            <li><a href="survey.html">Survey</a></li>
+            <li><a href="register.ejs">Update</a></li>
+            <li><a href="routines.ejs">Routines</a></li>
+        </ul>
+        <!-- we have used rightnav in order to design
+             the seachbar properly by using CSS-->
+        <div class="rightNav">
+      <!-- the value that search bar will take is text -->
+            <input placeholder = "Search" type="text" name="search" id="search" />
+            <button class="btn btn-sm">Search</button>
+        </div>
+    </nav>
+
+    <div class="container tm-bg-black">
+        <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                <header class="mb-5">
+                    <h3 class="tm-blue-text"><b>Sign-up Form</b></h3>
+                    <p class="grey-text mb-4">You can create a <b class = "tm-blue-text">Muscle Maker</b>&copy; account here! .</p>
+                </header>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                <form method="post" action = "/insertperson/" id= "signup">
+                    <div class="mb-2">
+                        <label class="mr-4">
+                            <input class="with-gap" name="title" type="radio" value="mr" />
+                            <span>Male</span>
+                        </label>
+                        <label class="mr-4">
+                            <input class="with-gap" name="title" type="radio" value="ms" />
+                            <span>Female</span>
+                        </label>
+                        <label>
+                            <input class="with-gap" name="title" type="radio" value="mrs" />
+                            <span>Unisex</span>
+                        </label>
+                    </div>
+
+                    <div class="input-field">
+                        <input placeholder="First Name" id="first_name" name="first_name" type="text" class="validate">
+                    </div>
+                    <div class="input-field">
+                        <input placeholder="Last Name" id="last_name" name="last_name" type="text" class="validate">
+                    </div>
+                    <div class="input-field">
+                        <input placeholder="Email" id="email" name="email" type="text" class="validate">
+                    </div>
+                    <div class="input-field">
+                        <input placeholder="Mobile" id="mobile" name="mobile" type="text" class="validate">
+                    </div>
+                    <div class="input-field">
+                        <input placeholder="Password" id="pass" name="pass" type="text" class="validate">
+                    </div>
+                    <div class="input-field">
+                        <input placeholder="Address" id="address" name="address" type="text" class="validate">
+                    </div>
+                    <div class="input-field">
+                        <input placeholder="State" id="state" name="state" type="text" class="validate">
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 pl-0 tm-pr-xs-0">
+                            <select name="Body Type">
+                                <option value="body">Body-Type</option>
+                                <option value="athletic">Athletic</option>
+                                <option value="overweight">Overweight</option>
+                                <option value="average">Average</option>
+                                <option value="lean">Lean</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 pl-0 tm-pr-xs-0">
+                                <select name="Height">
+                                    <option value="fourone">4'1"</option>
+                                    <option value="fourtwo">4'2"</option>
+                                    <option value="fourthree">4'3"</option>
+                                    <option value="fourfour">4'4"</option>
+                                    <option value="fourfive">4'5"</option>
+                                    <option value="foursix">4'6"</option>
+                                    <option value="fourseven">4'7"</option>
+                                    <option value="foureight">4'8"</option>
+                                    <option value="fournine">4'9"</option>
+                                    <option value="fourten">4'10"</option>
+                                    <option value="foureleven">4'11"</option>
+
+                                    <option value="five">5'0"</option> 
+                                    <option value="fiveone">5'1"</option>
+                                    <option value="fivetwo">5'2"</option>
+                                    <option value="fivethree">5'3"</option>
+                                    <option value="fivefour">5'4"</option>
+                                    <option value="fivefive">5'5"</option>
+                                    <option value="fivesix">5'6"</option>
+                                    <option value="fiveseven">5'7"</option>
+                                    <option value="fiveeight">5'8"</option>
+                                    <option value="fivenine">5'9"</option>
+                                    <option value="fiverten">5'10"</option>
+                                    <option value="fiveeleven">5'11"</option>
+
+                                    <option value="six">6'0"</option>
+                                    <option value="sixone">6'1"</option>
+                                    <option value="sixtwo">6'2"</option>
+                                    <option value="sixthree">6'3"</option>
+                                    <option value="sixfour">6'4"</option>
+                                    <option value="sixfive">6'5"</option>
+                                    <option value="sixsix">6'6"</option>
+                                    <option value="sixseven">6'7"</option>
+                                    <option value="sixeight">6'8"</option>
+                                    <option value="sixnine">6'9"</option>
+                                    <option value="sixten">6'10"</option>
+                                    <option value="sixeleven">6'11"</option>
+
+                                </select>
+                            </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 pr-0 tm-pl-xs-0">
+                            <div class="input-field">
+                                <input placeholder="Weight" id="weight" name="weight" type="text" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-right mt-4">
+                        <input type="submit" value = "SUBMIT" class="waves-effect btn-large btn-large-white px-4 black-text" />
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer class="row tm-mt-big mb-3">
+            <div class="col-xl-12">
+                <p class="text-center grey-text text-lighten-2 tm-footer-text-small centerText">
+                    Muscle Maker &copy; 2021 Created by Nicholas Ciavone - CSI 2520: 12/10/2021
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../public/js/jquery-3.2.1.slim.min.js"></script>
+    <script src="../public/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('select').formSelect();
+        });
+    </script>
+</body>
+
+</html>

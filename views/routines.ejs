@@ -1,0 +1,99 @@
+<!--
+-----------------------------------------------------------------------------
+Name: routines.html
+Author: @NCiavone
+Date Created: 12/8/21
+Purpose: The html file for displaying the routines.
+Notes:
+    -This is required to be under /views
+-----------------------------------------------------------------------------
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Routines Page</title>
+    <link rel="stylesheet" href="../public/css/styleMM.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+    <link rel="bootstrap" href="../public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../public/css/materialize.min.css">
+</head>
+
+<body id="login">
+     <!-- Nav Bar -->
+     <nav class="navbar background">
+        <!-- we have used list tag that is ul 
+             to list the items-->
+        <ul class="nav-list">
+            <li><a href="index.ejs">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.ejs">Sign-Up</a></li>
+            <li><a href="survey.html">Survey</a></li>
+            <li><a href="register.ejs">Update</a></li>
+            <li><a href="routines.ejs">Routines</a></li>
+        </ul>
+        <!-- we have used rightnav in order to design
+             the seachbar properly by using CSS-->
+        <div class="rightNav">
+      <!-- the value that search bar will take is text -->
+            <input type="text" name="search" id="search" />
+            <button class="btn btn-sm">Search</button>
+        </div>
+    </nav>
+
+    <div class="row">
+        <div class="col-12">
+            <header class="mt-5 mb-5 text-center">
+                <h1 class="font-weight-light tm-form-title centerText tm-blue-text">Your Routines</h1>
+                <p class="tm-form-description centerText">Here is where the <b class ="tm-blue-text">Muscle Maker</b>&copy; routines will be! </p>
+                <p class="tm-form-description small">To update your account information for new routines click <a href="../views/signup.html">here</a></p>
+            </header>
+
+            <div class="container">
+                <h3>Read the file</h3>
+                <h4>Read Data from The Database</h4>
+                <div id="main" >
+                  <form
+                
+                    action="/readperson"
+                    method="get"
+                    id="read"
+                  >
+                 
+                <input type="submit" value = "SUBMIT" class="waves-effect btn-large btn-large-white px-4 black-text" />
+                  </form>
+                </div>
+                <script language="javascript">
+                    var popupWindow = null;
+                    function centeredPopup(url,winName,w,h,scroll){
+                    LeftPosition = (screen.width) ? (screen.width-w)/2 : 0;
+                    TopPosition = (screen.height) ? (screen.height-h)/2 : 0;
+                    settings =
+                    'height='+h+',width='+w+',top='+TopPosition+',left='+LeftPosition+',scrollbars='+scroll+',resizable'
+                    popupWindow = window.open(url,winName,settings)
+                    }
+                    </script>
+                   <p><a href="../views/bicep.html" onclick="positionedPopup(this.href,'myWindow','700','300','100','200','yes');return false">Positioned Popup</a></p>
+            </div>     
+    
+
+    <script src="../public/js/jquery-3.2.1.slim.min.js"></script>
+    <script src="../public/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('select').formSelect();
+        });
+    </script>
+    <footer class="row tm-mt-big mb-3">
+        <div class="col-xl-12 text-center font-weight-light">
+            <p class="d-inline-block tm-bg-black white-text py-2 tm-px-5 centerText">
+                Muscle Maker &copy; 2021 Created by Nicholas Ciavone - CSI 2520: 12/10/2021
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
