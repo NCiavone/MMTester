@@ -49,7 +49,7 @@ app.post("/insertperson", (req,res) => {
 });
 
 // Update an account (Register/Update)
-app.post("/updateperson", (req,res) => {
+app.post("/updateperson", (req,res) => {})
     let sql = `UPDATE person SET ?`;
     db.query(sql, (err, result) => {
         if (err) {
@@ -57,9 +57,9 @@ app.post("/updateperson", (req,res) => {
         }
         res.send(`Account entry was updated into the Database...`);
     });
-});
+;
 // Deleting person information
-app.post("/deleteperson", (req, res) => {
+app.post("/deleteperson", (req, res) => {})
     let sql = `DELETE FROM students WHERE lname = '${req.body.last_name}'`;
     db.query(sql, (err, result) => {
       if (err) {
@@ -67,10 +67,10 @@ app.post("/deleteperson", (req, res) => {
       }
       res.send(`student entry was deleted in the db...`);
     });
-  });
+  ;
   
   // Reading person information
-  app.get("/readperson", (req, res) => {
+  app.get("/readperson", (req, res) => {})
     let sql = `SELECT * FROM person`;
     db.query(sql, (err, result) => {
       if (err) {
@@ -78,12 +78,12 @@ app.post("/deleteperson", (req, res) => {
       }
       res.render("readData", { data: result });
     });
-  });
+  ;
 
   // Getting weight
   //Routine A
   // Bicep Curl
-  app.get ("/readbicep"), (req,res) => {
+  app.get ("/readbicep"), (req,res) => {}
     let sql = `SELECT weight FROM person DIV 10`;
     db.query(sql, (err,result) => {
         if (err) {
@@ -92,7 +92,7 @@ app.post("/deleteperson", (req, res) => {
         res.render("readData", {data, result});
   });
   // Shoulder Press
-  app.get ("/readshoulder"), (req,res) => {
+  app.get ("/readshoulder"), (req,res) => {}
     let sql = `SELECT weight FROM person DIV 10`;
     db.query(sql, (err,result) => {
         if (err) {
@@ -101,16 +101,19 @@ app.post("/deleteperson", (req, res) => {
         res.render("readData", {data, result});
   });
   // readDelt
-  app.get ("/readdelt"), (req,res) => {
+
+  app.get ("/readdelt"), (req,res) => {}
     let sql = `SELECT weight FROM person DIV 12`;
-    db.query(sql, (err,result) => {
+    db.query(sql, (err,result) => 
+    {
         if (err) {
             throw err;
-        }
+                }
         res.render("readData", {data, result});
-  });
+    });
+
   // chestPress
-  app.get ("/readcpress"), (req,res) => {
+  app.get ("/readcpress"), (req,res) => {}
     let sql = `SELECT weight FROM person DIV 10`;
     db.query(sql, (err,result) => {
         if (err) {
@@ -119,7 +122,7 @@ app.post("/deleteperson", (req, res) => {
         res.render("readData", {data, result});
   });
   // chestFly
-  app.get ("/readcfly"), (req,res) => {
+  app.get ("/readcfly"), (req,res) => {}
     let sql = `SELECT weight FROM person DIV 10`;
     db.query(sql, (err,result) => {
         if (err) {
@@ -128,7 +131,7 @@ app.post("/deleteperson", (req, res) => {
         res.render("readData", {data, result});
   });
   // Triceps
-  app.get ("/readtriceps"), (req,res) => {
+  app.get ("/readtriceps"), (req,res) => {}
     let sql = `SELECT weight FROM person DIV 10`;
     db.query(sql, (err,result) => {
         if (err) {
@@ -137,7 +140,7 @@ app.post("/deleteperson", (req, res) => {
         res.render("readData", {data, result});
   });
 
-
+  
   // Routine B
 
 
